@@ -8,6 +8,7 @@ namespace lecture_7
         {
             int[] arr = CreateEmptyArr();
             PrintArr(arr);
+            MaxValue();
         }
 
         static void PrintArr(int[] array)
@@ -22,6 +23,20 @@ namespace lecture_7
         {
             int[] emptyArr = new int[0];
             return emptyArr;
+        }
+
+        static void MaxValue()
+        {
+            int[] array = new int[13];
+            Random rnd = new Random();
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = rnd.Next(1, 100);
+                Console.WriteLine(array[i] + " ");
+            }
+
+            Array.Sort(array);
+            Console.WriteLine($"Max value in array is {array[array.Length - 1 ]}");
         }
     }
 }
