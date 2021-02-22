@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodDay", "GoodDay\GoodDay.csproj", "{46142BC5-2176-4F32-8572-BDF672438981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LettersCount", "LettersCount\LettersCount.csproj", "{70DAB5AD-5724-42AC-AC69-890201201077}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46142BC5-2176-4F32-8572-BDF672438981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46142BC5-2176-4F32-8572-BDF672438981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46142BC5-2176-4F32-8572-BDF672438981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46142BC5-2176-4F32-8572-BDF672438981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DAB5AD-5724-42AC-AC69-890201201077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DAB5AD-5724-42AC-AC69-890201201077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DAB5AD-5724-42AC-AC69-890201201077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DAB5AD-5724-42AC-AC69-890201201077}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E8ED86B-562E-44C4-BE30-B7EA50BA0D73}
+	EndGlobalSection
+EndGlobal
