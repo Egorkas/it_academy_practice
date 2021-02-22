@@ -63,10 +63,9 @@ namespace lecture_7
 
         static void BoxUnBox()
         {
-            short usInp = 20;
-            Object boxValue = usInp;
-            sbyte unboxValue = (sbyte)(Int16)boxValue;
-            Console.WriteLine($"Value = " + unboxValue + ".Type = " + unboxValue.GetType());
+            Object boxValue = (short)20;
+            sbyte unboxValue = (sbyte)(short)boxValue;
+            Console.WriteLine($"\nValue = " + unboxValue + ".Type = " + unboxValue.GetType());
         }
     }
 }
