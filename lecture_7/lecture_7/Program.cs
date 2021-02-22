@@ -10,6 +10,7 @@ namespace lecture_7
             PrintArr(arr);
             MaxValue();
             ArrFromThreeEl();
+            BoxUnBox();
         }
 
         static void PrintArr(int[] array)
@@ -42,31 +43,30 @@ namespace lecture_7
 
         static void ArrFromThreeEl()
         {
-            int firstValue = 32;
-            object boxingFirstValue = firstValue;
-            char secondValue = 'A';
-            object boxingSecond = secondValue;
-            string thirdValue = "Hello";
-            object boxingThird = thirdValue;
-            object[] objectArray = new object[3] { boxingFirstValue, boxingSecond, boxingThird };
-            for (int i = 0; i < objectArray.Length; i++)
+            object[] array = new object[3];
+            array[0] = 32;
+            array[1] = 'A';
+            array[2] = "Hello";
+            foreach (var item in array)
             {
-                Console.WriteLine(objectArray[i]);
+                Console.Write(item + " ");
             }
-            objectArray[0] = Convert.ToInt32(objectArray[0]) + 10;
-            objectArray[2] = Convert.ToString(objectArray[2]) + ", guys!";
-            for (int i = 0; i < objectArray.Length; i++)
+            Console.WriteLine();
+
+            array[0] = Convert.ToInt32(array[0]) + 10;
+            array[2] = Convert.ToString(array[2]) + ", guys!";
+            foreach (var item in array)
             {
-                Console.WriteLine(objectArray[i]);
+                Console.Write(item + " ");
             }
         }
 
-        //static void BoxUnBox()
-        //{
-        //    short usInp = 20;
-        //    Object boxValue = usInp;
-        //    sbyte unboxValue = (sbyte)boxValue;
-        //    Console.WriteLine($"Value = " + unboxValue + ".Type = " + unboxValue.GetType());
-        //}
+        static void BoxUnBox()
+        {
+            short usInp = 20;
+            Object boxValue = usInp;
+            sbyte unboxValue = (sbyte)(Int16)boxValue;
+            Console.WriteLine($"Value = " + unboxValue + ".Type = " + unboxValue.GetType());
+        }
     }
 }
