@@ -6,27 +6,18 @@ namespace Lecture_13
 {
     class Uniqueltem
     {
-        private static int id;
+        private static int _id = 0;
 
-        public static int Id
-        { 
-            get
-            {
-                return id;
-            } 
-            set 
-            {
-                id = value; 
-            } 
-        }
+        public int Id { get; set; }
         public Uniqueltem()
         {
-            id++;
+            _id++;
+            Id = _id;
         }
 
         public static void DisplayId()
         {
-            Console.WriteLine($"Your Id is - {Id}");
+            Console.WriteLine($"Your Id is - {_id}");
         }
     }
 }
