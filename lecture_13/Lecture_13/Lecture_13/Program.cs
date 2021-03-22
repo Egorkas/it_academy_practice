@@ -6,7 +6,8 @@ namespace Lecture_13
     {
         static void Main(string[] args)
         {
-            Uniqueltem.Id = 0;
+            Console.WriteLine("Enter the start value of Id");
+            Uniqueltem.Id = Int32.Parse(Console.ReadLine());
             Uniqueltem uniq = new Uniqueltem();
             Uniqueltem uniq1 = new Uniqueltem();
             Uniqueltem uniq2 = new Uniqueltem();
