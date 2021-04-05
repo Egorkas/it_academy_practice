@@ -16,5 +16,10 @@ namespace Lecture_16Module2
         {
             _id = Guid.NewGuid();
         }
+
+        public override string ToString()
+        {
+            return $"Your PRIVATE_ID = {Id}, Name - {Name}!";
+        }
     }
 }
